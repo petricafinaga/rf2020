@@ -46,8 +46,8 @@ public class MainClass {
 		 }
 
 		 // Calculate the normalized value for each feature
-		 for(int line = 0; line < learningSet.length; ++line) {
-			 for(int col = 0; col < learningSet[0].length; ++col) {
+		 for(int line = 0; line < lines; ++line) {
+			 for(int col = 0; col < columns; ++col) {
 				 normalizedLearningSet[line][col] = (learningSet[line][col] - min[col]) / (max[col] - min[col]);
 			 }
 		 }
